@@ -14,22 +14,17 @@ export default function About() {
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-3">
-          <div className="bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg p-6">
-            <h3 className="text-lg font-medium text-gray-900 dark:text-white">Aplikacja</h3>
-            <p className="mt-3 text-base text-gray-500 dark:text-gray-400">
-              Frontend Lab to platforma demonstracyjna zaprojektowana w celu zaprezentowania nowoczesnych praktyk tworzenia stron internetowych, w tym uwierzytelniania, chronionych ścieżek i responsywnego designu przy użyciu Next.js i Tailwind CSS.
-            </p>
-          </div>
+
           <div className="bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg p-6">
             <h3 className="text-lg font-medium text-gray-900 dark:text-white">Autor</h3>
             <p className="mt-3 text-base text-gray-500 dark:text-gray-400">
-              Stworzone przez pasjonata programowania, eksplorującego możliwości najnowszych technologii frontendowych. Dedykowane tworzeniu czystych, łatwych w utrzymaniu i przyjaznych dla użytkownika interfejsów.
+              Marcin Świderski, nr albumu 15283
             </p>
           </div>
           <div className="bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg p-6">
             <h3 className="text-lg font-medium text-gray-900 dark:text-white">Technologie</h3>
             <ul className="mt-3 list-disc list-inside text-base text-gray-500 dark:text-gray-400">
-              <li>Next.js 15+</li>
+              <li>Next.js 16</li>
               <li>Tailwind CSS</li>
               <li>Firebase Auth & Firestore</li>
               <li>React Icons</li>
