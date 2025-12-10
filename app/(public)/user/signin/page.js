@@ -1,5 +1,5 @@
 'use client'
-import { signInWithEmailAndPassword, setPersistence, browserSessionPersistence } from "firebase/auth";
+import { signInWithEmailAndPassword, setPersistence, browserSessionPersistence, signOut } from "firebase/auth";
 import { auth } from "@/app/lib/firebase";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from 'next/link';
