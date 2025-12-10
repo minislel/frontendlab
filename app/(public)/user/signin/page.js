@@ -3,9 +3,9 @@ import { signInWithEmailAndPassword, setPersistence, browserSessionPersistence, 
 import { auth } from "@/app/lib/firebase";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from 'next/link';
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
-export default function SignInForm() {
+function SignInForm() {
     const params = useSearchParams();
     const router = useRouter();
     const returnUrl = params.get("returnUrl");
@@ -72,5 +72,13 @@ export default function SignInForm() {
                 </form>
             </div>
         </div>
+    );
+}
+
+export default function SignInPage() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <SignInForm />
+        </Suspense>
     );
 }
